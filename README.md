@@ -52,7 +52,7 @@ A modern, serverless full-stack web application for tracking workouts, personal 
 - Sessions are managed using **Auth JWT tokens.**
 - Protected API routes require authentication to access user data.
 
-## CI/CD
+## 🚦 CI/CD
 | Workflow | Trigger | Descriptions
 | --- | --- | --- |
 | `web.yml` | `push` to `web/` | Builds, tests, and deploys web app |
