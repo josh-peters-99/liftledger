@@ -2,17 +2,32 @@
 
 A modern, serverless full-stack web application for tracking workouts, personal bests, workout plans, and user metrics.
 
-## 🧰 Built with:
-- **Frontend:** Next.js (App Router)
-- **Backend:** Next.js API routes for simple logic, AWS Lambda via API Gateway for complex operations
-- **Database:** DynamoDB
-- **Caching:** Upstach Redis
-- **File Storage:** S3
-- **Authentication:** Auth.js with JWT
-- **Hosting:** Vercel (frontend + API) + AWS Lambda (heavy backend)
-- **CI/CD:** GitHub Actions
-- **Testing:** Jest
-- **UI/UX:** TailwindCSS + Daisy UI
+## 🧱 STACK DETAILS
+### 🌐 Web Frontend
+- **Frontend:** Next.js (App Router, TypeScript)
+- **Styling:** TailwindCSS + Daisy UI
+- **Testing:**
+  - **Unit:** Jest + React Testing Library
+  - **E2E:** Cypress
+- **Auth:** Auth.js (email provider)
+- **Deployment:** AWS Amplify or Vercel
+### 📱 iOS Frontend
+- **Language:** Swift 5+
+- **UI Framework:** SwiftUI
+- **Networking:** URLSession or Alamofire
+- **Data Models:** Codable + Async/Await
+- **Auth:** Token-based (store in Keychain)
+- **Testing:**
+  - **Unit:** XCTest
+  - **UI:** XCUITest
+- **CI/CD:** GitHub Actions + `xcodebuild`
+### 🔙 Backend
+- **Compute:** AWS Lambda (Python)
+- **API Layer:** AWS API Gateway (REST)
+- **Data:** DynamoDB
+- **Storage:** S3 (for profile pics or workout images/videos)
+- **Auth:** JWT verification (Amazon Cognito optional)
+- **Framework:** AWS Lambda Powertools = FastAPI or pure AWS Lambda handlers
 
 ## 🚀 Features
 - User authentication (Sign up / Sign in with email)
@@ -37,7 +52,15 @@ A modern, serverless full-stack web application for tracking workouts, personal 
 - Sessions are managed using **Auth JWT tokens.**
 - Protected API routes require authentication to access user data.
 
+## CI/CD
+| Workflow | Trigger | Descriptions
+| --- | --- | --- |
+| `web.yml` | `push` to `web/` | Builds, tests, and deploys web app |
+| `ios.yml` | `push` to `ios/` | Builds and runs tests in Xcode     |
+| `backend.yml` | `push` to `backend/` | Runs tests and deploys to Lambda |
+
 ## 📦 Setup Instructions
+### Web
 1. Clone the repository
 ```bash
 git clone https://github.com/josh-peters-99/liftledger.git
@@ -58,6 +81,8 @@ NEXTAUTH_URL=http://localhost:3000
 npm run dev
 ```
 5. Visit [http://localhost:3000](http://localhost:3000) to view the app.
+### iOS
+Open `LiftledgerApp.xcodeproj` in Xcode and run the app using the iOS Simulator.
 
 ## 🧪 Testing
 🚧 Under Construction
