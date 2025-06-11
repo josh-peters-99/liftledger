@@ -96,8 +96,8 @@ source venv/bin/activate
 pytest
 ```
 4. End the Python virtual environment
-```shell
-(venv) $ deactivate
+```bash
+deactivate
 ```
 
 ## 📚 Future Improvements
