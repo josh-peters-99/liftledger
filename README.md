@@ -85,7 +85,20 @@ npm run dev
 Open `LiftledgerApp.xcodeproj` in Xcode and run the app using the iOS Simulator.
 
 ## 🧪 Testing
-🚧 Under Construction
+### pytest
+1. Be inside the `backend/` directory
+2. Start the Python virtual environment
+```bash
+source venv/bin/activate
+```
+3. Run the pytests
+```bash
+pytest
+```
+4. End the Python virtual environment
+```shell
+(venv) $ deactivate
+```
 
 ## 📚 Future Improvements
 - Advanced workout analytics and graphs
