@@ -1,0 +1,46 @@
+{
+  "id": "67ff2465a6d7b1410bb505ed",
+  "userId": "67f02e2d8dadef98a3989e1e",
+  "workoutTitle": "Push Day",
+  "dateAndTime": "2014-03-12T13:37:27+00:00",
+  "notes": "",
+  "exercises": [
+      {
+        "exerciseType": "weight",
+        "name": "Flat Bench Press",
+        "sets": [
+            {
+              "setType": "warmup",
+              "reps": "8",
+              "weight": "125"
+            },
+            {
+              "setType": "working",
+              "reps": "8",
+              "weight": "185"
+            }
+          ]
+      },
+      {
+        "exerciseType": "bodyweight",
+        "name": "Push-ups",
+        "sets": [
+            {
+              "setType": "failure",
+              "reps": "80"
+            }
+          ]
+      },
+            {
+        "exerciseType": "hybrid",
+        "name": "Strict Pull-ups",
+        "sets": [
+            {
+              "setType": "failure",
+              "reps": "16",
+              "additionalWeight": "25"
+            }
+          ]
+      }
+    ]
+}
