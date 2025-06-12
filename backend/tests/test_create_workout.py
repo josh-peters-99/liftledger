@@ -1,5 +1,5 @@
 import json
-from ..handlers import create_workout
+from backend.handlers import create_workout
 
 def test_create_workout_success():
     event = {
