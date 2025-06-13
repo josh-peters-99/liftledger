@@ -4,8 +4,10 @@ from backend.handlers import create_workout
 def test_create_workout_success():
     event = {
         "body": json.dumps({
+            "id": "123",
             "userId": "123",
-            "date": "2025-06-08",
+            "workoutTitle": "Push Day",
+            "dateAndTime": "2025-06-08",
             "exercises": [
                 {"name": "Bench Press", "sets": [{"reps": 10, "weight": 100}]}
             ]

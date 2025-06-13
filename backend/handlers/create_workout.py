@@ -3,11 +3,13 @@ import json
 def handler(event, context):
   try:
     body = json.loads(event.get("body", "{}"))
+    workout_id = body.get("id")
     user_id = body.get("userId")
-    date = body.get("date")
+    workout_title = body.get("workoutTitle")
+    date_and_time = body.get("dateAndTime")
     exercises = body.get("exercises", [])
 
-    if not user_id or not date or not exercises:
+    if not workout_id or not user_id or not workout_title or not date_and_time or not exercises:
         return {
             "statusCode": 400,
             "body": json.dumps({"message": "Missing required fields"})
