@@ -2,6 +2,8 @@
 
 A modern, serverless full-stack web application for tracking workouts, personal bests, workout plans, and user metrics.
 
+![Project Architecture](docs/AWSServerlessArchitecture.drawio.png)
+
 ## 🧱 STACK DETAILS
 ### 🌐 Web
 - **Frontend:** React
