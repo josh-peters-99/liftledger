@@ -3,8 +3,8 @@
 A modern, serverless full-stack web application for tracking workouts, personal bests, workout plans, and user metrics.
 
 ## 🧱 STACK DETAILS
-### 🌐 Web Frontend
-- **Frontend:** Next.js (App Router, TypeScript)
+### 🌐 Web
+- **Frontend:** React
 - **Styling:** TailwindCSS + Daisy UI
 - **Testing:**
   - **Unit:** Jest + React Testing Library
